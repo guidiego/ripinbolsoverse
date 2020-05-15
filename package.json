@@ -9,5 +9,8 @@
     "handlebars": "^4.7.6",
     "lodash": "^4.17.15",
     "moment": "^2.25.3"
+  },
+  "scripts": {
+    "build": "node build.js"
   }
 }
