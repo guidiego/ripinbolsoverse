@@ -3,16 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Desgoverno ja trocou de ministros hoje?</title>
-    <link rel="stylesheet" href="/ripinbolsoverse/styles.css">
-    <meta property="og:title" content="Eu avisei...">
-    <meta property="og:image" content="/ripinbolsoverse/assets/img/euavisei.png">
+
+    <!-- Primary Meta Tags -->
+    <title>Hoje é um Grande Dia? Saiba a boa do Governo!</title>
+    <meta name="title" content="Hoje é um Grande Dia? Saiba a boa do Governo!">
+    <meta name="description" content="Site criado para indexar todas as mudanças de ministro, envolvimento em corrupção, noticias duvidosas e qualquer conteúdo extremamente relevante do governo do nosso capita!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{baseUrl ''}}">
+    <meta property="og:title" content="Hoje é um Grande Dia? Saiba a boa do Governo!">
+    <meta property="og:description" content="Site criado para indexar todas as mudanças de ministro, envolvimento em corrupção, noticias duvidosas e qualquer conteúdo extremamente relevante do governo do nosso capita!">
+    <meta property="og:image" content="{{assetUrl '/img/metatag.png'}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{baseUrl ''}}">
+    <meta property="twitter:title" content="Hoje é um Grande Dia? Saiba a boa do Governo!">
+    <meta property="twitter:description" content="Site criado para indexar todas as mudanças de ministro, envolvimento em corrupção, noticias duvidosas e qualquer conteúdo extremamente relevante do governo do nosso capita!">
+    <meta property="twitter:image" content="{{assetUrl '/img/metatag.png'}}">
+
+    <link rel="stylesheet" href="{{ assetUrl 'styles.css'}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ assetUrl '/img/fav/apple-icon-57x57.png'}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ assetUrl '/img/fav/apple-icon-60x60.png'}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ assetUrl '/img/fav/apple-icon-72x72.png'}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ assetUrl '/img/fav/apple-icon-76x76.png'}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ assetUrl '/img/fav/apple-icon-114x114.png'}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ assetUrl '/img/fav/apple-icon-120x120.png'}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ assetUrl '/img/fav/apple-icon-144x144.png'}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ assetUrl '/img/fav/apple-icon-152x152.png'}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ assetUrl '/img/fav/apple-icon-180x180.png'}}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ assetUrl '/img/fav/android-icon-192x192.png'}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ assetUrl '/img/fav/favicon-32x32.png'}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ assetUrl '/img/fav/favicon-96x96.png'}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ assetUrl '/img/fav/favicon-16x16.png'}}">
+    <link rel="manifest" href="{{ baseUrl '/manifest.json'}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <main class="app">
-        <h1>Bolsonaro já trocou seus ministros hoje?</h1>
-        <h2>Dados sobre mudanças dos ministros em linha do tempo para ser didático</h2>
-
+        <h1>Qual a boa do Governo Bolsonaro hoje?</h1>
+        <h2>Dados sobre mudanças de ministro e escandalos no Governo Bolsonaro para te manter atualizado</h2>
+        <div class="labels">
+            <span class="label">&#128081; Mais tempo no governo</span>
+            <span class="label">&#128082; Menos tempo no governo</span>
+        </div>
         <div class="timeline">
             {{#each people}}
                 <div class="timeline-item">
@@ -20,10 +57,15 @@
                         <span class="blue-background">{{outDate}}</span>
                         <span class="red-background">Sobreviveu {{liveDays}} dias</span>
                     </div>
-                    {{ name }}
+                    <h3>{{ name }}</h3>
+                    <h4>{{ owner }}</h4>
 
-                    {{#if isLast}}
-                        <span class="timeline-king">👑</span>
+                    {{#if mostDays}}
+                        <span class="timeline-king">&#128081;</span>
+                    {{/if}}
+
+                     {{#if lessDays}}
+                        <span class="timeline-king">&#128082;</span>
                     {{/if}}
                 </div>
             {{/each}}

@@ -33,11 +33,19 @@ body {
 }
 
 .timeline > .timeline-item {
-    padding: 20px;
+    padding: 25px 20px 20px;
     margin-bottom: 30px;
     background: #eceff1;
-    color: #273239;
     position: relative;
+}
+
+.timeline > .timeline-item > h3 {
+    color: #273239;
+}
+
+.timeline > .timeline-item > h4 {
+    color: #273239;
+    opacity: 0.8;
 }
 
 .timeline > .timeline-item > .timeline-date {
@@ -59,4 +67,33 @@ body {
     top: -14px;
     right: -10px;
     transform: rotate(45deg);
+}
+
+h1 {
+    color: #FFF;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+h2 {
+    display: none;
+}
+
+.labels {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        display: block;
+        opacity: 0.9;
+        padding-top: 10px;
+        font-weight: 400;
+    }
 }
