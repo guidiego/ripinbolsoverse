@@ -1,0 +1,13 @@
+{
+    "govInitialDate": "2019-01-01",
+    "people": [
+        { "out": "2019-02-18", "name": "Gustavo Bebianno", "owner": "Secretaria Geral"},
+        { "out": "2019-04-08", "name": "Ricardo Velez", "owner": "Educação"},
+        { "out": "2019-05-13", "name": "Santos Cruz", "owner": "Secretaria de Governo"},
+        { "out": "2019-05-20", "name": "Floriano Peixoto", "owner": "Secretaria Geral"},
+        { "out": "2020-02-06", "name": "Gustavo Canuto", "owner": "Desenvolvimento Regional"},
+        { "out": "2020-02-13", "name": "Osmar Terra", "owner": "Cidadania"},
+        { "out": "2020-04-16", "name": "Luiz H. Mandetta", "owner": "Saúde"},
+        { "out": "2020-04-24", "name": "Sérgio Moro", "owner": "Justiça e Segurança Pública"}
+    ]
+}

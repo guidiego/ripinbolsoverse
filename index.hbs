@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Desgoverno ja trocou de ministros hoje?</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main class="app">
+        <h1>Bolsonaro já trocou seus ministros hoje?</h1>
+        <h2>Dados sobre mudanças dos ministros em linha do tempo para ser didático</h2>
+
+        <div class="timeline">
+            {{#each people}}
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="blue-background">{{outDate}}</span>
+                        <span class="red-background">Sobreviveu {{liveDays}} dias</span>
+                    </div>
+                    {{ name }}
+
+                    {{#if isLast}}
+                        <span class="timeline-king">👑</span>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+    </main>
+</body>
+</html>
