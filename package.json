@@ -7,7 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "handlebars": "^4.7.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.25.3"
   },
   "scripts": {
